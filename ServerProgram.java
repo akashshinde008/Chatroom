@@ -24,12 +24,15 @@ import java.util.Scanner;
  *
  * @author Akash
  */
+
+//// Main Program for server 	
 public class ServerProgram {
     
     
     private static int hr;
     private static int min;
     private static String time;
+    /// Code for text colout in terminal  
     public static final String ANSI_RESET = "\u001B[0m";
     public static final String ANSI_BLACK = "\u001B[30m";
     public static final String ANSI_RED = "\u001B[31m";
@@ -68,12 +71,12 @@ public class ServerProgram {
             in = new BufferedReader(new InputStreamReader(conn.getInputStream()));
             out.print(ANSI_CYAN+ "Enter your Name : "+second);
             name = in.readLine();
-             Date date = new Date();   // given date
-        Calendar calendar = GregorianCalendar.getInstance(); // creates a new calendar instance
-        calendar.setTime(date);   // assigns calendar to given date 
-        calendar.get(Calendar.HOUR_OF_DAY); // gets hour in 24h format
-         hr = calendar.get(Calendar.HOUR);        // gets hour in 12h format
-         min = calendar.get(Calendar.MINUTE);    
+            Date date = new Date();   // given date
+            Calendar calendar = GregorianCalendar.getInstance(); // creates a new calendar instance
+           calendar.setTime(date);   // assigns calendar to given date 
+           calendar.get(Calendar.HOUR_OF_DAY); // gets hour in 24h format
+           hr = calendar.get(Calendar.HOUR);        // gets hour in 12h format
+           min = calendar.get(Calendar.MINUTE);    
             if(calendar.get(Calendar.AM_PM)==0)
                    time = "AM";
             else
@@ -119,6 +122,9 @@ public class ServerProgram {
   
 }
 
+//Main Class ended
+
+// Client model to save name and ip adress of logged user
 class Clients {
 
     
@@ -130,8 +136,12 @@ class Clients {
     //String name;
     String name;
 
-    
 }
+
+// Client class ended
+
+// Thread class to handle multithreading for connected users
+
 class client_handler extends Thread {
 
 public static final String ANSI_RESET = "\u001B[0m";
@@ -320,5 +330,7 @@ public static final String second = "\033[0m";
     }
     
 }
+
+// Thread class ended
     
 
