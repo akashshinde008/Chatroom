@@ -5,7 +5,17 @@ Chatroom implemented using Java Socket
 
 ##Features
 
+>Coloured UI in Terminal
 
+![alt tag](https://github.com/akashshinde008/Chatroom/blob/master/image8.tiff?raw=true)
+
+>Show all user logged in just typing ###Show message
+
+![alt tag](https://github.com/akashshinde008/Chatroom/blob/master/image9.tiff?raw=true)
+
+>Left chat simple typing message ###Bye
+
+![alt tag](https://github.com/akashshinde008/Chatroom/blob/master/image10.tiff?raw=true)
 
 ##Installation Guide
 >Download zip file 
