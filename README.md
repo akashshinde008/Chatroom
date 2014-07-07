@@ -8,3 +8,4 @@ Chatroom implemented using Java Socket
 
 
 ##Installation Guide
+![alt tag](https://github.com/akashshinde008/Chatroom/blob/master/download.tiff?raw=true)
