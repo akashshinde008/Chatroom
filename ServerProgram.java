@@ -46,7 +46,7 @@ public class ServerProgram {
     public static final String first = "\033[1m";
     public static final String second = "\033[0m";
     /**
-     * @param args the command line arguments
+     * @param args the command line arguments	
      */
     public static void main(String[] args) throws IOException {
         // TODO code application logic here
@@ -263,7 +263,7 @@ public static final String second = "\033[0m";
         
         if(socket1 == client.socket){
             out1 = new PrintStream(client.socket.getOutputStream());
-            out1.print(first+client.name+second+"("+hr+":"+min+ ")"+ " : ");
+            out1.print(first+client.name+second+"("+hr+":"+min+time+ ")"+ " : ");
             out1.flush();
         }
         else    
@@ -325,7 +325,7 @@ public static final String second = "\033[0m";
         out.println(ANSI_GREEN+"Bye  ===>  Sign out from Chatroom"+second);
         out1.println("----------------------------------------------------------");
 
-        out1.print(client.name+"("+hr+":"+min+ ")"+ " : ");
+        out1.print(client.name+"("+hr+":"+min+ time+")"+ " : ");
         
     }
     
