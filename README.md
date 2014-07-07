@@ -11,6 +11,10 @@ Chatroom implemented using Java Socket
 ![alt tag](https://github.com/akashshinde008/Chatroom/blob/master/download.tiff?raw=true)
 
 1.Download zip file 
+
 2.Extract zip file 
-3.Open folder in terminal using >cd Chatroom
+
+3.Open folder in terminal using 
+>cd Chatroom
+
 
